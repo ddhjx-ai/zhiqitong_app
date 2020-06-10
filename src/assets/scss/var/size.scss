@@ -1,0 +1,24 @@
+// font-size vars
+
+
+$fontsize-large: 18px;
+$fontsize-normal: 16px;
+$fontsize-small: 14px;
+$fontsize-mini: 12px;
+
+// radius-size
+$radius-size: 0;
+
+$page-space: 16px; //页面左右的间距
+
+$header-height: 64px;
+$header-facade-height: 112px; //一级页面的大头部高度
+$header-padding-top: 20px;//这个是ios头部状态栏的高度
+$header-tab-height: 44px; //头部tab高度
+
+$bottom-tab-height: 50px; //底部tab的高度
+
+
+$scale: 0.562; //这个是给横屏时候用的
+
+$header-zindex: 10000000; //这个值才可以覆盖图表中的tooltip

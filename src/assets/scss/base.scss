@@ -1,0 +1,79 @@
+
+//在页面最外层添加对应的类名就行
+.has-base-header {
+  //有头部
+  padding-top: $header-height;
+  &.has-header-tab {
+    //有头部并且有头部tab
+    padding-top: $header-height + $header-tab-height;
+  }
+  .base-tab {
+    top: $header-height;
+  }
+}
+
+.has-header-facade {
+  //有头部
+  padding-top: $header-facade-height;
+  &.has-header-tab {
+    //有头部并且有头部tab
+    padding-top: $header-facade-height + $header-tab-height;
+  }
+  .base-tab {
+    top: $header-facade-height;
+  }
+}
+
+.has-bottom-tab {
+  padding-bottom: $bottom-tab-height;
+}
+
+//过渡动画
+.slide-fade-enter-active {
+  transition: all .2s ease;
+}
+
+.slide-fade-leave-active {
+  transition: all .2s ease;
+}
+
+.slide-fade-enter,
+.slide-fade-leave-to {
+  transform: translateY(-100px);
+  opacity: 0;
+}
+
+// 提示类
+.no-more {
+  padding: 10px 0;
+  font-size: 12px;
+  color: #9A9A9A;
+  text-align: center;
+}
+
+.no-data {
+  padding: 50px 0;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #9a9a9a;
+}
+
+input,textarea{
+  -webkit-user-select:auto;
+  -moz-user-select:auto;
+  user-select:auto;
+}
+
+input:disabled, textarea:disabled {
+  color: #fff !important;
+}
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+  .boxMargin {
+    margin-top: 20px;
+  }
+}
